@@ -1,6 +1,7 @@
 package com.paypal.digraph.parser;
 
 import java.io.FileInputStream;
+import java.util.Map;
 
 import org.antlr.v4.runtime.ANTLRFileStream;
 import org.antlr.v4.runtime.BailErrorStrategy;
@@ -16,6 +17,31 @@ import com.paypal.digraph.parser.antlr.DOTParser;
 
 public class ParserTest
 {
+	@Test
+	public void testGraphParserUsage() {
+		log("--- testGraphParserUsage ---");
+		
+		try {
+			GraphParser parser = new GraphParser(new FileInputStream("src/test/resources/test1.dg"));
+			Map<String, GraphNode> nodes = parser.getNodes();
+			Map<String, GraphEdge> edges = parser.getEdges();	
+			
+			log("--- nodes:");
+			for (GraphNode node : nodes.values()) {
+				log(node.getId() + " " + node.getAttributes());
+			}
+			
+			log("--- edges:");
+			for (GraphEdge edge : edges.values()) {
+				log(edge.getNode1().getId() + "->" + edge.getNode2().getId() + " " + edge.getAttributes());
+			}
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+			log(e);
+		}
+	}
+
 	@Test
 	public void testGraphParser() {
 		log("--- testGraphParser ---");
