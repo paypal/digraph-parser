@@ -2,7 +2,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.paypal.digraph.parser</groupId>
+  <groupId>com.paypal.digraph</groupId>
   <artifactId>digraph-parser</artifactId>
   <packaging>jar</packaging>
   <version>1.0-SNAPSHOT</version>
@@ -17,6 +17,17 @@
 	  <distribution>repo</distribution>
 	</license>
   </licenses>
+
+  <distributionManagement>
+	<repository>
+		<id>sonatype-nexus-staging</id>
+		<url>http://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+	</repository>
+	<snapshotRepository>
+		<id>sonatype-nexus-snapshots</id>
+		<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+	</snapshotRepository>
+  </distributionManagement>
 
   <developers>
 	<developer>
