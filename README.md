@@ -70,7 +70,7 @@ n4->n5 {}
 #### Maven dependency
 ```xml
 <dependency>
-  <groupId>com.paypal.digraph.parser</groupId>
+  <groupId>com.paypal.digraph</groupId>
   <artifactId>digraph-parser</artifactId>
   <version>1.0-SNAPSHOT</version>
 </dependency>
