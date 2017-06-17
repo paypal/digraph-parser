@@ -5,7 +5,7 @@
   <groupId>com.paypal.digraph</groupId>
   <artifactId>digraph-parser</artifactId>
   <packaging>jar</packaging>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
   <name>digraph-parser</name>
   <url>https://github.com/paypal/digraph-parser</url>
   <description>Java parser for digraph DSL (Graphviz DOT language)</description>
