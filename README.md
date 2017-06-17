@@ -1,6 +1,9 @@
 # digraph-parser
 
-Simple, standalone Java parser for digraph DSL (domain-specific language) in Graphviz DOT syntax
+Simple, standalone Java parser for digraph DSL (domain-specific language) in Graphviz DOT syntax.
+Available on Maven Central: http://central.maven.org/maven2/com/paypal/digraph/digraph-parser/1.0/
+
+[![Maven Central](https://img.shields.io/badge/maven%20central-1.0-brightgreen.svg)](http://search.maven.org/#artifactdetails|com.paypal.digrap|digraph-parser|1.0|)
 
 See also
 * http://www.graphviz.org/doc/info/lang.html
