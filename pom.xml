@@ -36,6 +36,12 @@
 	</developer>
   </developers>
 
+  <scm>
+	<connection>scm:git:git@github.com:paypal/digraph-parser.git</connection>
+	<developerConnection>scm:git:git@github.com:paypal/digraph-parser.git</developerConnection>
+	<url>git@github.com:paypal/digraph-parser.git</url>
+  </scm>
+
   <dependencies>
 	<!-- compile -->
 	<dependency>
@@ -83,6 +89,18 @@
 			  <goals>
 				<goal>jar</goal>
 			  </goals>
+			</execution>
+		  </executions>
+		</plugin>
+		<plugin>
+		  <groupId>org.apache.maven.plugins</groupId>
+		  <artifactId>maven-javadoc-plugin</artifactId>
+		  <executions>
+			<execution>
+			  <id>attach-javadoc</id>
+				<goals>
+				 <goal>jar</goal>
+				</goals>
 			</execution>
 		  </executions>
 		</plugin>
