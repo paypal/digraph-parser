@@ -75,6 +75,6 @@ n4->n5 {}
 <dependency>
   <groupId>com.paypal.digraph</groupId>
   <artifactId>digraph-parser</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
 </dependency>
 ```
