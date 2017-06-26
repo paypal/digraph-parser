@@ -8,6 +8,7 @@ Available on Maven Central: http://central.maven.org/maven2/com/paypal/digraph/d
 See also
 * http://www.graphviz.org/
 * http://www.graphviz.org/doc/info/lang.html
+* https://github.com/antlr/grammars-v4/tree/master/dot
 
 #### Usage
 ```java
